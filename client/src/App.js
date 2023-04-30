@@ -21,6 +21,7 @@ function App() {
 // user status -> Login (true)/not Login(false)  //to be expanded whit backend logic
   const currentUser = true;
 
+  
 
 
 //Layout (navbar, side bars & etc of app) for log user(story, img, bla-bla..) & not log user (home page of app)
