@@ -13,21 +13,27 @@ import {
 import Navbar from './components/navbar/Navbar';
 import LeftBar from './components/leftBar/LeftBar';
 import RightBar from './components/rightBar/RightBar';
+import { useContext } from 'react';
+import { DarkModeContext } from './context/darkModeContext';
 
 
 
 function App() {
 
 // user status -> Login (true)/not Login(false)  //to be expanded whit backend logic
-  const currentUser = true;
+const currentUser = true;
 
-  
+
+//accuses context & darkMode by hook 'useContext'
+const {darkMode} = useContext(DarkModeContext);
+//console.log(darkMode); 
+
 
 
 //Layout (navbar, side bars & etc of app) for log user(story, img, bla-bla..) & not log user (home page of app)
 const Layout = () => {
   return (
-    <div className='theme-dark'>
+    <div className={`theme-${darkMode ? "dark" : "light"}`}>
       <Navbar/>
       <div style={{display:'flex'}}>
         <LeftBar/>
