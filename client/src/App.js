@@ -32,7 +32,9 @@ const Layout = () => {
       <div style={{display:'flex'}}>
         <LeftBar/>
         {/* Outlet - dynamic component  */}
-        <Outlet/>    
+        <div style={{flex:6}}>
+          <Outlet/> 
+        </div>   
         <RightBar/>
       </div>
     </div>
