@@ -1,13 +1,21 @@
+@import "../../style.scss";
+
+
 .navbar {
+    //import function from 'style' for global change of style/wrapped
+    @include themify($themes){
+
+    
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
       height: 50px;
-      border-bottom: 1px solid lightgray;
+      border-bottom: 1px solid themed("border");
       position: sticky;
       top: 0;
-      background-color: white;
+      color: themed("textColor");
+      background-color: themed("bg"); 
       z-index: 999;
   
       .left {
@@ -18,13 +26,14 @@
         span {
           font-weight: bold;
           font-size: 20px;
+          color: themed("logo");
         }
   
         .search {
           display: flex;
           align-items: center;
           gap: 10px;
-          border: 1px solid;
+          border: 1px solid themed("border");
           border-radius: 5px;
           padding: 5px;
   
@@ -32,6 +41,7 @@
             border: none;
             width: 500px;
             background-color: transparent;
+            color: themed("textColor");
           }
         }
       }
@@ -54,8 +64,9 @@
             object-fit: cover;
           }
   
-          span {
-          }
+          span {}
         }
       }
+
+    }
 }

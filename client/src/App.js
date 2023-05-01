@@ -1,4 +1,4 @@
-import './App.css';
+import './style.scss';
 import ErrorPage from './pages/Error/ErrorPage';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
@@ -27,7 +27,7 @@ function App() {
 //Layout (navbar, side bars & etc of app) for log user(story, img, bla-bla..) & not log user (home page of app)
 const Layout = () => {
   return (
-    <div>
+    <div className='theme-dark'>
       <Navbar/>
       <div style={{display:'flex'}}>
         <LeftBar/>
