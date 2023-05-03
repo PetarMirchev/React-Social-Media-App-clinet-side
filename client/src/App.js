@@ -15,13 +15,16 @@ import LeftBar from './components/leftBar/LeftBar';
 import RightBar from './components/rightBar/RightBar';
 import { useContext } from 'react';
 import { DarkModeContext } from './context/darkModeContext';
+import { AuthContext } from './context/authContext';
 
 
 
 function App() {
 
 // user status -> Login (true)/not Login(false)  //to be expanded whit backend logic
-const currentUser = true;
+// const currentUser = true;
+const {currentUser}= useContext(AuthContext);
+
 
 
 //accuses context & darkMode by hook 'useContext'
