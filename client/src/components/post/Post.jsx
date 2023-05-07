@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import'./post.scss';
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
@@ -7,7 +7,7 @@ import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Link } from '@mui/material';
 import Comments from '../comments/Comments.jsx';
-import {useState} from 'react';
+
 
 
 
@@ -17,7 +17,9 @@ const Post = ({post}) => {
 
 
 //temporary like icons functionality
-const liked = false;
+//const liked = false;
+const [liked, setLiked] = useState(false);
+
 
   return (
     <div className='post'>
@@ -41,7 +43,7 @@ const liked = false;
           <p>{post.desc}</p>
         </div>
         <div className="info">
-          <div className="item">
+          <div className="item" onClick={() => setLiked(!liked)}>
             {/* if liked 1 icon else show second icon */}
             {liked ? <FavoriteOutlinedIcon/> : <FavoriteBorderOutlinedIcon/> }
             12 Likes
