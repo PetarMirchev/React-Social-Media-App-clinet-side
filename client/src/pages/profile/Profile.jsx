@@ -22,37 +22,40 @@ const Profile = () => {
       </div>
       <div className="profileContainer">
         <div className="userBioInfo">
+
           <div className="left">
-          <a href="http://facebook.com">
-              <FacebookTwoToneIcon fontSize="large" />
-            </a>
-            <a href="https://www.instagram.com/">
-              <InstagramIcon fontSize="large" />
-            </a>
-            <a href="https://twitter.com/">
-              <TwitterIcon fontSize="large" />
-            </a>
-            <a href="https://www.linkedin.com/">
-              <LinkedInIcon fontSize="large" />
-            </a>
-            <a href="https://www.pinterest.com/">
-              <PinterestIcon fontSize="large" />
-            </a>
+            <a href="http://facebook.com">
+                <FacebookTwoToneIcon fontSize="large" />
+              </a>
+              <a href="https://www.instagram.com/">
+                <InstagramIcon fontSize="large" />
+              </a>
+              <a href="https://twitter.com/">
+                <TwitterIcon fontSize="large" />
+              </a>
+              <a href="https://www.linkedin.com/">
+                <LinkedInIcon fontSize="large" />
+              </a>
+              <a href="https://www.pinterest.com/">
+                <PinterestIcon fontSize="large" />
+              </a>
           </div>
+
           <div className="center">
             <span>Petar Mirchev</span>
-            <div className="info">
-              <div className="item">
-                <PlaceIcon/>
-                <span>BG</span>
+              <div className="info">
+                <div className="item">
+                  <PlaceIcon/>
+                  <span>BG</span>
+                </div>
+                <div className="item">
+                  <LanguageIcon/>
+                  <span>https://github.com/PetarMirchev</span>         
+                </div>         
               </div>
-              <div className="item">
-                <LanguageIcon/>
-                <span>https://github.com/PetarMirchev</span>         
-              </div>         
-            </div>
             <button>follow</button>
           </div>
+
           <div className="right">
             <EmailOutlinedIcon/>
             <MoreVertIcon/>
