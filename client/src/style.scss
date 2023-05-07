@@ -42,3 +42,25 @@ $themes: (
   @function themed($key) {
     @return map-get($theme-map, $key);
   }
+
+
+//******************************************************************************************************//
+
+
+
+  // logic for mobile version of the project
+
+  @mixin mobile {
+    //from 0px - 480px 
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+
+
+  @mixin tablet {
+    //from 481px - 960px 
+    @media (max-width: 960px) {
+      @content;
+    }
+  }

@@ -13,6 +13,16 @@
     background-color: themed("bgSoft");    
 
 
+    // on 0-480px not display rightBar!
+    @include mobile {
+        display: none;
+    }
+
+    //from 481px - 960px  not display rightBar!
+    @include tablet {
+        display: none;
+    }
+
     //to be not visible scroll
     &::-webkit-scrollbar{
         display: none;

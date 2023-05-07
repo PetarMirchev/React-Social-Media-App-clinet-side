@@ -4,9 +4,18 @@
     //import function from 'style' for global change of style/wrapped
     @include themify($themes){
 
-
         background-color: themed("bgSoft");
-        padding: 10px 50px;
+        padding: 20px 70px;
+        
 
+        // on 0-480px
+        @include mobile {
+        padding: 10px;
+        }
+
+        //from 481px - 960px  tablet! 
+        @include tablet {
+            padding: 20px;
+        }
     }
 }

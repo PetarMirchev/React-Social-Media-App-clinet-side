@@ -12,7 +12,14 @@
     height: calc(100vh - 70px);
     overflow: scroll;
     background-color: themed("bg");
-    color: themed("textColor");    
+    color: themed("textColor"); 
+    
+    // on 0-480px not display leftBar
+    @include mobile {
+        display: none;
+      }
+
+
 
     //to be not visible scroll
     &::-webkit-scrollbar{

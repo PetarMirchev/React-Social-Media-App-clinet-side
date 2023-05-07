@@ -33,6 +33,16 @@
 
         .profileContainer {
             padding: 20px 70px;
+            // 0-480px mobile
+            @include mobile {
+                padding: 10px;
+            }
+
+            //from 481px - 960px  tablet! 
+            @include tablet {
+                padding: 20px;
+            }
+
 
             .userBioInfo{
                 height: 180px;
@@ -48,11 +58,24 @@
                 justify-content: space-between;
                 margin-bottom: 20px;
 
+                // 0-480px mobile
+                @include mobile{
+                    flex-direction: column;
+                    height: 30vh;
+                    padding: 20px;
+                    margin: 100px;
+                }
+
 
                 .left{
                     flex: 1;
                     display: flex;
                     gap: 10px;
+
+                    //from 481px - 960px  tablet! 
+                    @include tablet {
+                        flex-wrap: wrap;
+                    }
 
                     a{
                         color: themed("textColorSoft"); 
@@ -76,6 +99,12 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
+
+                        // 0-480px mobile
+                        @include mobile {
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                        }
 
                         .item{
                             display: flex;
