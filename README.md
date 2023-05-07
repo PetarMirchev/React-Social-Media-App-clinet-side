@@ -14,3 +14,10 @@ React Social Media App Clinet Side Design
 
 ![img post](https://user-images.githubusercontent.com/73035495/236562039-ff112c93-84aa-4538-b2d7-d244b700cd0e.png)
 
+![profile img](https://user-images.githubusercontent.com/73035495/236674183-94dfdae2-6297-4fc6-a585-e778a5a64f43.png)
+
+![comments img](https://user-images.githubusercontent.com/73035495/236674190-446b270b-4e27-4aac-b755-594ed3b23521.png)
+
+![liked img](https://user-images.githubusercontent.com/73035495/236674195-a368d8ba-c287-4cae-b329-9d38e84f073b.png)
+
+
