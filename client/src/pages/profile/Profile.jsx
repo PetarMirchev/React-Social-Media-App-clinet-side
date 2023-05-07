@@ -17,8 +17,12 @@ const Profile = () => {
   return (
     <div className='profile'>
       <div className="images">
-        <img src="https://images.unsplash.com/file-1661973760703-91f50df21c28image?dpr=2&auto=format&fit=crop&w=416&q=60" alt="" className='cover'/>
-        <img src="https://images.unsplash.com/photo-1542458579-bc6f69b5ce6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" className='profilePic'/>
+        <img src="https://images.unsplash.com/file-1661973760703-91f50df21c28image?dpr=2&auto=format&fit=crop&w=416&q=60" 
+        alt="" 
+        className='cover'/>
+        <img src="https://images.unsplash.com/photo-1542458579-bc6f69b5ce6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" 
+        alt="" 
+        className='profilePic'/>
       </div>
       <div className="profileContainer">
         <div className="userBioInfo">
@@ -61,10 +65,10 @@ const Profile = () => {
             <MoreVertIcon/>
           </div>
         </div>
-        <Posts/>
+          <Posts/>
       </div>   
     </div>
-  )
-}
+  );
+};
 
 export default Profile

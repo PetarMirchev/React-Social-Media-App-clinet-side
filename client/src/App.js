@@ -1,4 +1,3 @@
-import './style.scss';
 import ErrorPage from './pages/Error/ErrorPage';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
@@ -38,10 +37,10 @@ const Layout = () => {
   return (
     <div className={`theme-${darkMode ? "dark" : "light"}`}>
       <Navbar/>
-      <div style={{display:'flex'}}>
+      <div style={{ display:'flex' }}>
         <LeftBar/>
         {/* Outlet - dynamic component  */}
-        <div style={{flex:6}}>
+        <div style={{ flex:6 }}>
           <Outlet/> 
         </div>   
         <RightBar/>
@@ -93,7 +92,7 @@ const router = createBrowserRouter([
 
 
   return (
-    <div className="App">
+    <div>
       <RouterProvider router={router} />
     </div>
   );

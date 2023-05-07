@@ -5,7 +5,7 @@ import { AuthContext } from '../../context/authContext';
 
 const Login = () => {
 
-  const {login}= useContext(AuthContext);
+  const { login }= useContext(AuthContext);
 
   const handleLogin = () => {
     login();
